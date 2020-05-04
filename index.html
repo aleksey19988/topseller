@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="css/style.css">
-    <link rel='stylesheet' href="css/normalize.css.css">
+    <link rel='stylesheet' href="css/normalize.css">
     <title>TopSeller</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
             <span>INTEGRATIONS</span>
         </div>
     </div>
-    <div class="promo">
+    <section class="promo"> <!--Промо-->
         <div class="container">
             <div class="partners">
                 <img src="img/storage.png" alt="Мой склад">
@@ -47,7 +47,10 @@
                 <input type="tel" placeholder="Номер телефона">
                 <input type="email" placeholder="Email">
                 <input type="checkbox" id="checkbox">
-                <label for="checkbox">Даю согласие на обработку персональных данных</label>
+                <label for="checkbox">
+                    Даю согласие на обработку персональных данных
+                    <div class="checked"></div>
+                </label>
                 <input type="submit" name="" id="" value="Подробнее">
             </form>
             <div class="promo_btns">
@@ -60,12 +63,12 @@
                 <div class="cards_item reports">Отчеты и аналитика</div>
                 <div class="cards_item automation">Автоматизация возвратов</div>
                 <div class="cards_item orders">Получение заказов (FBS и FBO)</div>
-                <div class="cards_item status_oreders">Синхронизация товаров и статусов заказов</div>
+                <div class="cards_item status_orders">Синхронизация товаров и статусов заказов</div>
                 <div class="cards_item print_stickers">Умная печать стикеров</div>
             </div>
         </div>
-    </div>
-    <div class="receiving_orders">
+    </section>
+    <section class="receiving_orders"> <!--Получение и сборка заказов-->
         <div class="container">
             <div class="receiving_orders_content">
                 <h2 class="section_header">Получение<br>и сборка заказов </h2>
@@ -87,8 +90,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="synchronization_section">
+    </section>
+    <section class="synchronization_section"> <!--Синхронизация остатков-->
         <div class="container">
             <div class="synchronization_content">
                 <h2 class="section_header">Синхронизация остатков</h2>
@@ -96,8 +99,8 @@
                 <p class="section_descr">После поступления товаров на остатки в МоемСкладе они автоматически появятся на Озон. Функция позволяет автоматизировать проставление остатков в личном кабинете Озон и не допустить заказа товаров, которых нет в наличии на складе.</p>
             </div>
         </div>
-    </div>
-    <div class="print">
+    </section>
+    <section class="print"> <!--Умная печать стикеров-->
         <div class="container">
             <div class="print_content">
                 <h2 class="section_header">Умная печать стикеров</h2>
@@ -110,8 +113,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="orders_section">
+    </section>
+    <section class="orders_section"> <!--Синхронизация товаров и статусов заказов-->
         <div class="container">
             <div class="orders_content">
                 <h2 class="section_header">Синхронизация товаров и статусов заказов</h2>
@@ -121,8 +124,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="analitycs">
+    </section>
+    <section class="analitycs"> <!--Отчёты и аналитика-->
         <div class="container">
             <div class="analitycs_content">
                 <h2 class="section_header">Отчеты и аналитика</h2>
@@ -141,67 +144,169 @@
                     <h3 class="profit_head">Прибыльность</h3>
                     <p class="profit_descr">Отчет Прибыльность позволяет оценить прибыль от реализации товаров за заданный период времени и рентабельность продукции. Показатель рентабельности продукции демонстрирует отношение прибыли к себестоимости товара и является индикатором ценовой политики компании.</p>
                 </div>
-                <div class="prev_btn"></div>
-                <div class="next_btn"></div>
+                <div class="btns">
+                    <div class="prev_btn"></div>
+                    <div class="next_btn"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="documents_section">
+    </section>
+    <section class="documents_section"> <!--Документы-->
         <div class="container">
             <div class="documents_section_content">
                 <h2 class="section_header">Документы</h2>
-                <p class="section_descr">В разделе <span class="documents_section_descr_indicators">Показатели → Документы</span> представлен список всех документов, созданных за всё время. Здесь удобно искать конкретные документы с помощью фильтров, из раздела можно удалять документы и печатать списки документов.</p>
+                <p class="section_descr">В разделе <span class="highlight_text">Показатели → Документы</span> представлен список всех документов, созданных за всё время. Здесь удобно искать конкретные документы с помощью фильтров, из раздела можно удалять документы и печатать списки документов.</p>
             </div>
         </div>
-    </div>
-    <div class="reviews_section">
+    </section>
+    <section class="reviews_section"> <!--Отзывы-->
         <div class="container">
-            <h2 class="section_header">Отзывы</h2>
-            <div class="prev_btn reviews_btn_left"></div>
-            <div class="next_btn reviews_btn_right"></div>
-            <div class="review review_center">
-                <div class="review_author">
-                    <div class="author_img"></div>
-                    <div class="author_descr">
-                        <div class="author_name">Константинов Константин</div>
-                        <div class="company_name">Название компании</div>
-                        <div class="author_contact">Контакт</div>
+            <div class="reviews_content">
+                <h2 class="section_header">Отзывы</h2>
+                <div class="btns btns_reviews">
+                    <div class="reviews_btn_left"></div>
+                    <div class="reviews_btn_right"></div>
+                </div>
+                <div class="review review_center">
+                    <div class="review_author">
+                        <div class="author_img"></div>
+                        <div class="author_descr">
+                            <div class="author_name">Константинов Константин</div>
+                            <div class="company_name">Название компании</div>
+                            <div class="author_contact">Контакт</div>
+                        </div>
+                    </div>
+                    <div class="review_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus tellus id interdum quam porttitor commodo fringilla adipiscing. Gravida ultricies eget fringilla euismod varius leo. Condimentum massa, ut sem vulputate turpis et. Quisque viverra maecenas pulvinar non mauris arcu lobortis tellus laoreet. Sociis tortor urna fames neque aenean. Nulla ultrices aenean curabitur at nibh ultricies auctor quam cursus. 
                     </div>
                 </div>
-                <div class="review_text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus tellus id interdum quam porttitor commodo fringilla adipiscing. Gravida ultricies eget fringilla euismod varius leo. Condimentum massa, ut sem vulputate turpis et. Quisque viverra maecenas pulvinar non mauris arcu lobortis tellus laoreet. Sociis tortor urna fames neque aenean. Nulla ultrices aenean curabitur at nibh ultricies auctor quam cursus. 
-                </div>
-            </div>
-            <div class="review review_left">
-                <div class="review_author">
-                    <div class="author_img"></div>
-                    <div class="author_descr">
-                        <div class="author_name">Константинов Константин</div>
-                        <div class="company_name">Название компании</div>
-                        <div class="author_contact">Контакт</div>
+                <div class="review review_right">
+                    <div class="review_author">
+                        <div class="author_img"></div>
+                        <div class="author_descr">
+                            <div class="author_name">Константинов Константин</div>
+                            <div class="company_name">Название компании</div>
+                            <div class="author_contact">Контакт</div>
+                        </div>
+                    </div>
+                    <div class="review_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus tellus id interdum quam porttitor commodo fringilla adipiscing. Gravida ultricies eget fringilla euismod varius leo. Condimentum massa, ut sem vulputate turpis et. Quisque viverra maecenas pulvinar non mauris arcu lobortis tellus laoreet. Sociis tortor urna fames neque aenean. Nulla ultrices aenean curabitur at nibh ultricies auctor quam cursus. 
                     </div>
                 </div>
-                <div class="review_text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus tellus id interdum quam porttitor commodo fringilla adipiscing. Gravida ultricies eget fringilla euismod varius leo. Condimentum massa, ut sem vulputate turpis et. Quisque viverra maecenas pulvinar non mauris arcu lobortis tellus laoreet. Sociis tortor urna fames neque aenean. Nulla ultrices aenean curabitur at nibh ultricies auctor quam cursus. 
-                </div>
-            </div>
-            <div class="review review_right">
-                <div class="review_author">
-                    <div class="author_img"></div>
-                    <div class="author_descr">
-                        <div class="author_name">Константинов Константин</div>
-                        <div class="company_name">Название компании</div>
-                        <div class="author_contact">Контакт</div>
+                <div class="review review_left">
+                    <div class="review_author">
+                        <div class="author_img"></div>
+                        <div class="author_descr">
+                            <div class="author_name">Константинов Константин</div>
+                            <div class="company_name">Название компании</div>
+                            <div class="author_contact">Контакт</div>
+                        </div>
                     </div>
-                </div>
-                <div class="review_text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus tellus id interdum quam porttitor commodo fringilla adipiscing. Gravida ultricies eget fringilla euismod varius leo. Condimentum massa, ut sem vulputate turpis et. Quisque viverra maecenas pulvinar non mauris arcu lobortis tellus laoreet. Sociis tortor urna fames neque aenean. Nulla ultrices aenean curabitur at nibh ultricies auctor quam cursus. 
+                    <div class="review_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus tellus id interdum quam porttitor commodo fringilla adipiscing. Gravida ultricies eget fringilla euismod varius leo. Condimentum massa, ut sem vulputate turpis et. Quisque viverra maecenas pulvinar non mauris arcu lobortis tellus laoreet. Sociis tortor urna fames neque aenean. Nulla ultrices aenean curabitur at nibh ultricies auctor quam cursus. 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="pricelist_section">
-
-    </div>
+    </section>
+    <section class="pricelist_section"> <!--Прайс-лист-->
+        <div class="container">
+            <h2 class="section_header">Прайс лист</h2>
+            <p class="section_descr">Приложение <span class="hightlight_text">Topse11er</span> работает по подписке. 
+                Вы можете оценить все возможности приложения в течение бесплатного тестового периода (3 дня) 
+            </p>
+            <p class="payment">При оплате подписки Вам будут доступны: </p>
+            <div class="pricelist_function">
+                <ul>
+                    <li>Оперативная техническая поддержка</li>
+                    <li>Новые функции и обновления</li>
+                </ul>
+                <ul>
+                    <li>Поддержка изменений API Озон</li>
+                    <li>Новые маркетплейсы со скидкой</li>
+                </ul>
+            </div>
+            <div class="pricelist_cards">
+                <div class="pricelist_card">
+                    <p class="mounths">1 месяц</p>
+                    <p class="price_text">4 990 руб</p>
+                    <div class="border"></div>
+                    <div class="all_function">Включены все функции</div>
+                </div>
+                <div class="pricelist_card">
+                    <p class="mounths">3 месяца</p>
+                    <p class="price_text">11 990 руб</p>
+                    <div class="border"></div>
+                    <div class="advantage">Выгода - 3 000 руб</div>
+                    <div class="all_function">Включены все функции</div>
+                </div>
+                <div class="pricelist_card">
+                    <p class="mounths">6 месяцев</p>
+                    <p class="price_text">22 500 руб</p>
+                    <div class="border"></div>
+                    <div class="advantage">Выгода - 7 500 руб</div>
+                    <div class="all_function">Включены все функции</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="instruction_section"> <!--Инструкция по установке*/-->
+        <h2 class="section_header">Инструкция по установке</h2>
+        <div class="screenshots">
+            <div class="screenshot center_screen"></div>
+            <div class="screenshot right_screen"></div>
+            <div class="screenshot left_screen"></div>
+        </div>
+        <div class="steps">
+            <div class="left"></div>
+            <div class="step">Шаг 1</div>
+            <div class="right"></div>
+        </div>
+    </section>
+    <section class="feedback"> <!--Остались вопросы?-->
+        <div class="container">
+            <h2 class="section_header">Остались вопросы?</h2>
+            <form action="" class="feedback_form">
+                <input type="tel" placeholder="Номер телефона">
+                <input type="email" name="" id="" placeholder="Email">
+                <input type="submit" name="" id="" value="Подробнее">
+                <input type="checkbox" id="checkbox_footer">
+                <label for="checkbox_footer">
+                    Даю согласие на обработку персональных данных
+                    <div class="checked_footer"></div>
+                </label>
+                
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <a href="" class="logo"><img src="logo/Group.svg" alt="Логотип"></a>
+                <div class="rules">
+                    <ul>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Условия использования сервиса</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <ul>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Тарифы</a></li>
+                        <li><a href="#">О сервисе</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul>
+                        <li><a href="tel:7(495)409-9891">+7(495)409-9891</a></li>
+                        <li><a href="mailto:info@topse11er.ru">info@topse11er.ru</a></li>
+                        <li><a href="#">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
