@@ -75,7 +75,6 @@ body {
 .partners {
     padding-top: 34px;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .partners img:nth-child(2) {
@@ -103,6 +102,7 @@ body {
     font-weight: bold;
     font-size: 36px;
     line-height: 30px;
+    text-transform: uppercase;
 }
 .promo form {
     display: flex;
@@ -237,7 +237,7 @@ body {
     display: block;
     width: 48px;
     height: 48px;
-    background: url(../icons/telegram.png);
+    background: url(../icons/telegram.png) center center no-repeat;
     margin-left: 35px;
     transition: transform 0.5s;
 }
@@ -317,6 +317,9 @@ body {
     margin-top: 46px;
     padding-top: 53px;
 }
+.mobile_screen { /*Картинка для мобилы*/
+    display: none;
+}
 .receiving_orders .receiving_orders_content .tools .tools_head {
     font-style: normal;
     font-weight: bold;
@@ -378,6 +381,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.print_mobile {
+    display: none;
 }
 .print_content .print_cards .print_cards_item {
     box-sizing: border-box;
@@ -1224,9 +1230,140 @@ footer {
 }
 @media (max-width: 576px) {
     .container {
-        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
     }
     header nav {
         display: none;
+    }
+    .header {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .promo {
+        background: #fff url(../img/bg/promo_bg.png) right 208px no-repeat;
+        background-size: 450px 571px;
+    }
+    .integrations {
+        margin: 0px 0 55px;
+    }
+    .partners {
+        padding-top: 0;
+        justify-content: center;
+    }
+    .caption .caption_header {
+        font-size: 25px;
+        line-height: 15px;
+        text-align: center;
+        margin-top: 37px;
+        margin-bottom: 550px;
+    }
+    .cards_item {
+        height: 25px;
+        max-width: 274px;
+        padding: 13px;
+        font-size: 13px;
+    }
+    .cards .synchronization {
+        top: 350px;
+        right: 200px;
+    }
+    .cards .reports {
+        top: 420px;
+        right: 200px;
+    }
+    .cards .automation {
+        top: 490px;
+        right: 200px;
+    }
+    .cards .orders {
+        top: 560px;
+        right: 200px;
+    }
+    .cards .status_orders {
+        top: 630px;
+        right: 200px;
+    }
+    .cards .print_stickers {
+        top: 700px;
+        right: 200px;
+    }
+    .promo form input[type='tel'], 
+    .promo form input[type='email'] {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .promo label {
+        width: 100%;
+        margin-left: 0;
+        font-size: 15px;
+    }
+    .promo form input[type='submit'] {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .promo_btns {
+        flex-wrap: wrap;
+    }
+    .promo_btns a {
+        height: 60px;
+    }
+    .promo_btns .price {
+        width: 250px;
+    }
+    .promo_btns .instruction {
+        order: 1;
+        margin-top: 30px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .promo_btns .telegram {
+        background-size: cover;
+        width: 60px;
+        margin-left: 0;
+        margin-right: 80px;
+    }
+    .section_header {
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+    }
+    .section_descr {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 20px;
+    }
+    .receiving_orders {
+        padding: 0;
+        background: #fff;
+    }
+    .mobile_screen {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .receiving_orders .receiving_orders_content .tools .tools_head {
+        text-align: center;
+    }
+    .synchronization_section {
+        min-height: 0;
+        background: #fff;
+        margin-top: 70px;
+    }
+    .print {
+        margin-top: 70px;
+    }
+    .print_mobile_version {
+        display: flex;
+        margin-top: 40px;
+    }
+    .print_mobile {
+        display: block;
+        width: 150px;
+    }
+    .orders_section {
+        padding: 0;
+        background: #fff;
     }
 }
