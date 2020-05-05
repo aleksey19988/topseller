@@ -12,6 +12,7 @@ body {
     border-bottom: 2px solid #E9F2FF;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 22px 0 16px;
 }
 .menu {
@@ -58,6 +59,33 @@ body {
 }
 .menu_item:last-child {
     margin: 0;
+}
+.burger {
+    width: 40px;
+    height: 3px;
+    background: #004EBD;
+    border-radius: 2px;
+    position: relative;
+}
+.burger::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: #004EBD;
+    border-radius: 2px;
+}
+.burger::before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: #004EBD;
+    border-radius: 2px;
 }
 .promo {
     padding: 16px 0 90px;
@@ -1239,6 +1267,7 @@ footer {
     .header {
         border-bottom: none;
         padding-bottom: 0;
+        padding-top: 20px;
     }
     .promo {
         background: #fff url(../img/bg/promo_bg.png) right 208px no-repeat;
@@ -1253,7 +1282,6 @@ footer {
     }
     .caption .caption_header {
         font-size: 25px;
-        line-height: 15px;
         text-align: center;
         margin-top: 37px;
         margin-bottom: 550px;
