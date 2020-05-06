@@ -491,6 +491,9 @@ body {
     border-radius: 50px;
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1), inset 0px 0px 40px rgba(0, 0, 0, 0.1);
 }
+.analitycs_content .profit_second {
+    display: none;
+}
 .analitycs_content .profit_head {
     font-style: normal;
     font-weight: bold;
@@ -1254,6 +1257,8 @@ footer {
         width: 350px;
         font-size: 15px;
         line-height: 20px;
+        box-sizing: border-box;
+        padding: 0 25px;
     }
 }
 @media (max-width: 576px) {
@@ -1288,6 +1293,7 @@ footer {
         text-align: center;
         margin-top: 37px;
         margin-bottom: 500px;
+        line-height: 10px;
     }
     .cards_item {
         height: 25px;
@@ -1296,28 +1302,28 @@ footer {
         font-size: 13px;
     }
     .cards .synchronization {
-        top: 430px;
-        right: 200px;
+        top: 380px;
+        left: 100px;
     }
     .cards .reports {
-        top: 500px;
-        right: 200px;
+        top: 450px;
+        left: 100px;
     }
     .cards .automation {
-        top: 570px;
-        right: 200px;
+        top: 520px;
+        left: 100px;
     }
     .cards .orders {
-        top: 640px;
-        right: 200px;
+        top: 590px;
+        left: 100px;
     }
     .cards .status_orders {
-        top: 710px;
-        right: 200px;
+        top: 660px;
+        left: 100px;
     }
     .cards .print_stickers {
-        top: 780px;
-        right: 200px;
+        top: 730px;
+        left: 100px;
     }
     .promo form input[type='tel'], 
     .promo form input[type='email'] {
@@ -1352,7 +1358,6 @@ footer {
         background-size: cover;
         width: 60px;
         margin-left: 0;
-        margin-right: 80px;
     }
     .section_header {
         font-size: 22px;
@@ -1422,6 +1427,11 @@ footer {
         display: flex;
         overflow: scroll;
         padding-bottom: 50px;
+        box-sizing: border-box;
+        padding-left: 20px;
+    }
+    .analitycs_content .profit_second {
+        display: block;
     }
     .documents_section {
         margin-top: 90px;
@@ -1477,6 +1487,8 @@ footer {
         display: flex;
         overflow: scroll;
         padding-bottom: 50px;
+        box-sizing: border-box;
+        padding-left: 20px;
     }
     .pricelist_section {
         margin-top: 100px;
@@ -1485,9 +1497,48 @@ footer {
         display: none;
     }
     .pricelist_cards {
-        overflow: scroll
+        overflow: scroll;
+        justify-content: flex-start;
+        padding: 10px 15px;
     }
     .pricelist_card {
         margin-right: 30px;
+        box-shadow: 0px 0px 10px rgba(60, 66, 196, 0.5);
+    }
+    .pricelist_cards > div:nth-child(2) {
+        width: 450px;
+        height: 405px;
+    }
+    .instruction_section .screenshots {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        padding: 30px 0;
+    }
+    .instruction_section .center_screen {
+        min-width: 60%;
+        margin: 0 20px;
+    }
+    .instruction_section .steps {
+        display: none;
+    }
+    .instruction_section .right_screen,
+    .instruction_section .left_screen {
+        display: none;
+    }
+    .feedback .feedback_form input {
+        width: 100%;
+    }
+    .footer_content {
+        flex-wrap: wrap;
+    }
+    .footer_content .logo {
+        display: block;
+        margin: 0 auto 32px;
+    }
+    .footer_content > div {
+        min-width: 70%;
+        margin: 0 auto;
     }
 }
