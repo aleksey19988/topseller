@@ -1289,11 +1289,13 @@ footer {
         justify-content: center;
     }
     .caption .caption_header {
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
         margin-top: 37px;
         margin-bottom: 500px;
-        line-height: 10px;
+    }
+    .caption .caption_header p {
+        margin: 0;
     }
     .cards_item {
         height: 25px;
