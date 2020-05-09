@@ -1418,9 +1418,9 @@ footer {
         width: 100%;
     }
     .analitycs_content .profit {
-        width: 80%;
         margin-left: 0;
         margin-right: 50px;
+        min-width: 100%;
     }
     .analytics_card {
         text-align: center;
@@ -1431,6 +1431,14 @@ footer {
         padding-bottom: 50px;
         box-sizing: border-box;
         padding-left: 20px;
+    }
+    .analitycs_content .profit_head {
+        width: 100%;
+        font-size: 15px;
+    }
+    .analitycs_content .profit_descr {
+        width: 100%;
+        font-size: 12px;
     }
     .analitycs_content .profit_second {
         display: block;
